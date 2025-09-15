@@ -1,24 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import Category from './Category';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='py-[40px]'>
+        <div className='max-w-[1320px] m-auto'>
+          <h1 className='text-center text-[40px] font-bold'>
+            Our Products
+          </h1>
+          <div className='grid grid-cols-[30%_auto] gap-[20px]'>
+            <div className='bg-[grey]'>
+
+              <Category />
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </>
+
   );
 }
 
